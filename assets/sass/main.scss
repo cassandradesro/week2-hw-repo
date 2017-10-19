@@ -14,7 +14,6 @@ TABLE OF CONTENTS:
 @import "variables";
 
 
-
 /* 1. Main Layout ================================= */
 
 * {
@@ -43,6 +42,10 @@ body {
 		font-size: 2.2em;
 		font-weight: bold;
 		margin: 30px;
+		@media (min-width: $tablet){
+			text-transform: uppercase;
+			color: #2a6144;
+		}
 	}
 	button{
 		height: 50px;
@@ -53,9 +56,11 @@ body {
 		width: 100%;
 		max-width: 200px;
 		padding: 0 20px;
+		border-radius: 10px;
+		border: 1px solid #1d442f;
 	}
 	p{
-		margin: 10px;
+		margin: 20px;
 		a{
 			text-decoration: none;
 		}
@@ -79,12 +84,4 @@ body {
 			}
 		}
 	}
-}
-
-.beans{
-	background-image: url(../img/coffeebeans.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
 }
