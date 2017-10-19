@@ -25,9 +25,12 @@ body {
   color: #000;
   display: flex;
   flex-direction: column; }
-  .content .logo img {
-    width: 100%;
-    height: 100%; }
+  .content .logo {
+    max-width: 900px;
+    margin: 0 auto; }
+    .content .logo img {
+      width: 100%;
+      height: 100%; }
   .content h1 {
     font-size: 1.3em; }
   .content h2 {
